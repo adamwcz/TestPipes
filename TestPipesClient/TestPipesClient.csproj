@@ -6,4 +6,33 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestPipesDLL\TestPipesDLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PipeGameBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PictureSharingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\NumberAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\NameInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
