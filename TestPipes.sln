@@ -3,17 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPipesServer", "TestPipes\TestPipesServer.csproj", "{8D54E11C-3734-418B-80BF-11D8C2DB6A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPipesServer", "TestPipes\TestPipesServer.csproj", "{8D54E11C-3734-418B-80BF-11D8C2DB6A22}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B} = {F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPipesClient", "TestPipesClient\TestPipesClient.csproj", "{F8E9B15E-0C3D-4CCC-9592-BCBC0B57426F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPipesClient", "TestPipesClient\TestPipesClient.csproj", "{F8E9B15E-0C3D-4CCC-9592-BCBC0B57426F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B} = {F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPipesDLL", "TestPipesDLL\TestPipesDLL.csproj", "{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPipesDLL", "TestPipesDLL\TestPipesDLL.csproj", "{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerUIForms", "ServerForms\ServerUIForms.csproj", "{4672C2C4-CFCA-43A3-A726-9B60F8C1BEFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerUIConsole", "ServerConsole\ServerUIConsole.csproj", "{7FA49C61-B995-4B68-A353-47A1660BD74F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server UI", "Server UI", "{A66427FA-540D-498C-A276-B04F6EE8F88E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client UI", "Client UI", "{C3D3FD9B-0B70-46D3-835C-E32CE13AE03E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientUIForms", "ClientUIForms\ClientUIForms.csproj", "{B0A34EC6-50CB-43B8-B866-6C7B04450CD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,26 @@ Global
 		{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F599DE99-FEE3-44AA-B5B5-AF997E8E7D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4672C2C4-CFCA-43A3-A726-9B60F8C1BEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4672C2C4-CFCA-43A3-A726-9B60F8C1BEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4672C2C4-CFCA-43A3-A726-9B60F8C1BEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4672C2C4-CFCA-43A3-A726-9B60F8C1BEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA49C61-B995-4B68-A353-47A1660BD74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA49C61-B995-4B68-A353-47A1660BD74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA49C61-B995-4B68-A353-47A1660BD74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA49C61-B995-4B68-A353-47A1660BD74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A34EC6-50CB-43B8-B866-6C7B04450CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A34EC6-50CB-43B8-B866-6C7B04450CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A34EC6-50CB-43B8-B866-6C7B04450CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A34EC6-50CB-43B8-B866-6C7B04450CD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4672C2C4-CFCA-43A3-A726-9B60F8C1BEFF} = {A66427FA-540D-498C-A276-B04F6EE8F88E}
+		{7FA49C61-B995-4B68-A353-47A1660BD74F} = {A66427FA-540D-498C-A276-B04F6EE8F88E}
+		{B0A34EC6-50CB-43B8-B866-6C7B04450CD6} = {C3D3FD9B-0B70-46D3-835C-E32CE13AE03E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C3EEA6F-56E0-48D4-9D29-216163CF560F}
